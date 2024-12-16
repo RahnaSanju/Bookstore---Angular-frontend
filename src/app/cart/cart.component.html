@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+</head>
+<body>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cart of getData">
+                <ng-container *ngIf="cart">
+                  <td>{{ cart.book_Id }}</td>
+                  <td>{{ cart.book_Name }}</td>
+                  <td><input type="number" [(ngModel)]="cart.qty" min="1" max="100"></td>
+                  <td>
+                    <div class="button-container">
+                        <button (click)="updateCart(cart.user_Id, cart.book_Id, cart.qty)">Update Entry</button>
+                        <button (click)="deleteCart(cart.user_Id, cart.book_Id)">Delete Entry</button>
+                    </div>
+                </td>
+                </ng-container>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

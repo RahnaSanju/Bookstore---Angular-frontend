@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .login-user {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            gap: 10px; /* Space between rows */
+        }
+
+        .login-user-row {
+            display: flex;
+            flex-direction: column; /* Ensure label and input are in a column */
+        }
+
+        .login-user label {
+            font-weight: bold;
+            margin-bottom: 5px; /* Space below the label */
+        }
+
+        .login-user input[type="text"] {
+            padding: 5px;
+            width: 150px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-user button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-user button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="login-user">
+        <div class="login-user-row">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" [(ngModel)]="username">
+        </div>
+        <div class="login-user-row">
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="Enter password" [(ngModel)]="password">
+        </div>
+        <button (click)="LoginUser()">Log in</button>
+    </div>
+</div>
+
+</body>
+</html> -->
+
+<!-- login-user.component.css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="login-user.component.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="login-user">
+        <div class="login-user-row">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" [(ngModel)]="username">
+        </div>
+        <div class="login-user-row">
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="Enter password" [(ngModel)]="password">
+        </div>
+        <button (click)="LoginUser()">Log in</button>
+    </div>
+</div>
+
+</body>
+</html>
